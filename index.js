@@ -25,6 +25,6 @@ function currentLine(deliLine) {
             announcement.push(`${lineCount+1}. ${deliLine[lineCount]}`);
             lineCount++
           }
-      return `The line is currently: ${announcement} `
+      return `The line is currently: ${announcement} + " "`
   }
 }
