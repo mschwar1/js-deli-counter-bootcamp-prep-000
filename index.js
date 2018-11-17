@@ -21,6 +21,7 @@ function currentLine(deliLine) {
   }
   else {
     var lineCount = 0
+    announcement = []
     while (lineCount < deliLine.length) {
       announcement.push(`${lineCount+1}. ${deliLine[lineCount]}`);
       lineCount++
