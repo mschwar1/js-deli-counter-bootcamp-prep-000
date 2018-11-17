@@ -19,7 +19,7 @@ function currentLine(deliLine) {
   if (i === 0) {
     return "The line is currently empty."
   }
-  else if (i > 0) {
+  else {
     for (var lineCount = 0; lineCount < i; lineCount++)
     return `The line is currently: ${lineCount+1}. ${deliLine[lineCount]},`
   }
