@@ -22,7 +22,7 @@ function currentLine(deliLine) {
           var lineCount = 0
           var announcement = []
           while (lineCount < deliLine.length) {
-            announcement.push(`${lineCount+1}. ${deliLine[lineCount]}`);
+            announcement.push(`${lineCount+1}. ${deliLine[lineCount]} `);
             lineCount++
           }
       return `The line is currently: ${announcement}`
