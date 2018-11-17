@@ -15,12 +15,12 @@ function nowServing(deliLine) {
 }
 
 function currentLine(deliLine) {
-  for (var i = deliLine.length; i >= 0; i++)
-  if (i === 0) {
+  while (deliLine.length >= 0)
+  if (deliLine.length === 0) {
     return "The line is currently empty."
   }
   else {
-    for (var lineCount = 0; lineCount < i; lineCount++)
+    for (var lineCount = 0; lineCount < deliLine.length; lineCount++)
     return `The line is currently: ${lineCount+1}. ${deliLine[lineCount]},`
   }
 }
