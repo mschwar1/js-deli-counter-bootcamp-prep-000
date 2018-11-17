@@ -20,7 +20,11 @@ function currentLine(deliLine) {
     return "The line is currently empty."
   }
   else {
-    for (var lineCount = 0; lineCount < deliLine.length; lineCount++)
-    return `The line is currently: ${lineCount+1}. ${deliLine[lineCount]},`
+    var lineCount = 0
+    while (lineCount < deliLine.length) {
+      announcement.push(`${lineCount+1}. ${deliLine[lineCount]}`);
+      lineCount++
+    }
+      return `The line is currently: ${announcement},`
   }
 }
